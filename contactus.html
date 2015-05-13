@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8" />
+	<head>
+		<style type="text/css"> 
+			#home-btn{
+		  		margin-right: 5%;
+		  		width:5%;
+				float:right;
+		   }
+		   #contactus-title{
+		  		margin-top: 5%;
+		  		margin-left:20%;
+		  		width:60%;
+		  		float:center;
+		   }
+		   #yourname{
+		   		float:left;
+		  		width:20%;
+		  		margin-left:3%;
+		   }
+		   
+		   #email{
+		   		float:right;
+		   		margin-right:43%;
+		  		width:11%;
+		   }
+		   
+		   
+		   #subject{
+		  		width:15%;
+		  		
+		  		margin-left:3%;
+		   }
+		  
+		  #content{
+		  		width:15%;
+		  		
+		  		margin-left:3%;
+		   }
+		  	#yourname-text{
+		   		float:left;
+		   		margin-left:2%;
+		   }
+		 
+		   #email-text{
+		   		float:right;
+		   		margin-right:4%;
+		   }
+		   #subject-text{
+		   		
+		   		margin-left:2%;
+		   }
+		   #content-text{
+		   		
+		   		margin-left:2%;
+		   }
+		   #send-btn{
+		  		width:15%;
+		   }
+		</style> 
+		<script type="text/javascript">
+			function sendhover(element) {
+    			element.setAttribute('src', 'img/contactus-sendpush.png');
+			}
+			function sendunhover(element) {
+    			element.setAttribute('src', 'img/contactus-send.png');
+			}
+			function sendclick(table){
+				table.reset();
+			}
+		</script>
+		<title>[NAME-contact us]</title>
+	</head>
+	<body style="background-color:#5CACEE">
+		<div id="header">
+			<a href="index.html" class="title-btn">
+				<img id="home-btn" src="img/home.PNG" ></img>
+		 	</a>
+		</div>
+		<div id="title">
+			<img id="contactus-title" src="img/contactus-title.PNG" href=""></img>
+		</div>
+		<p align="center">　</p>
+		<div align="center">
+			<center>
+				<table border="0" width="56%" bgcolor="#95CACA">
+					<tr>
+						<td width="100%">
+							<form id="formcontact" action="mailto:johnny83721@gamil.com" method="POST" enctype="text/plain">
+								<div>
+									<img id="yourname" src="img/contactus-yourname.PNG" ></img>
+									<img id="email" src="img/contactus-email.PNG"></img>
+									</br>
+									<textarea id="yourname-text" name="name:" rows="1" cols="34"></textarea> 
+									<textarea id="email-text" name="email:" rows="1" cols="52"> </textarea> 
+									</br>
+									<img id="subject" src="img/contactus-subject.PNG" ></img>
+									</br>
+									<textarea id="subject-text" name="subject:" rows="1" cols="94"> </textarea>
+								</div> 
+								<div > 
+									<img id="content" src="img/contactus-content.PNG" ></img>
+									</br>
+									<textarea id="content-text" name="content:" rows="5" cols="94"> </textarea>
+								</div> 
+								
+								<div align="center"> 
+								<p>
+								<input id="send-btn" type="image" src="img/contactus-send.png" onmouseover="sendhover(this);" onmouseout="sendunhover(this);" >
+								 </p> 
+								</div> 
+							</form> 
+						</td> 
+					</tr> 
+				</table> 
+			</center> 
+		</div>
+	</body>
+</html>
