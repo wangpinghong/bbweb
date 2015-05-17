@@ -2,90 +2,40 @@
 
 <html>
 <meta charset="utf-8" />
-	<head>
-		<style type="text/css"> 
-			body{
-				background-color:#5CACEE;
-				
-			}
-			
-		   #border{
-		  		margin-top: 1%;
-		  		margin-left: 15%;
-		  		weight:80%;
-		  		width:70%;
-		   }
-		   #contactus{
-		  		margin-right: 5%;
-		  		width:8%;
+<head>
+<style type="text/css"> 
+			#plus{
 				float:right;
-		   }
-		   
-		   #leftarrow{
-		  		margin-top: 13%;
-		  		height:50%;
-		  		margin-left:3%;
-		  		float:left;
-		   }
-		   
-		   #rightarrow{
-		  		margin-top: 12%;
-		  		margin-right: 3%;
-		  		height:50%;
-		  		float:right;
-		   }
-		   #mainimg{
-		  		margin-top: 1%;
-		  		margin-left:4%;
-		  		width:74%;
-		   }
-		   #title-content1{
-				position:absolute; 
-				z-index:10; 
-				letter-spacing:4px;
-				margin-top:12%; 
-				left:40%; 
-				font-family:微軟正黑體; 
-				color:#FFF;
-				font-size:24px;
+				width:3%;
+				margin-top:3%;
+				margin-right:3% ;
 			}
-			
-			#title-title{
-				position:absolute; 
-				z-index:10; 
-				margin-top:5%; 
-				left:30%; 
-				font-family:微軟正黑體; 
-				letter-spacing:10px;
-				color: #fff ;
-				font-size:60px;
+			#title{
+				display: block;
+				margin-top:13%;
+   				margin-left: auto;
+    			margin-right: auto;
 			}
-		</style>
-		<title>[NAME]</title>
-	</head>
-	<body>
-			<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=1586463518292827";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-		
-		<div id="header" >
-			<a href="contactus.html" class="title-btn"><img id="contactus" src="img/index_contactus.png" ></img></a>
-			<div style="float:right;"class="fb-like" data-href="http://pinghong.byethost16.com/bbweb/index.html" data-width="80px" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-		</div>
-		<div id="title">
-			<img id="border" src="img/index_border.png" ></img>
-			<a id="title-title" >OUR APP TITLE</a>
-			<a id="title-content1" >always a <span style="font-weight: bold;">Safe</span> way home</a>
-		</div>
-		<div id="main">
-			<a title="我的黑盒子"><img id="leftarrow" src="img/index-leftarrow.PNG" ></img></a>
-			<img id="mainimg" src="img/index-main.png" ></img>
-			<a title="車禍紀錄"><img id="rightarrow" src="img/index-rightarrow.PNG" ></img></a>
-		</div>	
-	</body>
+			#left-arrow{
+				margin-top:-18%;
+				float:left;
+			}
+			#right-arrow{
+				margin-top:-18%;
+				float:right;
+			}
+</style>
+	<title>[NAME]</title>
+<script>
+</script>
+</head>
+<body>
+	<div id="head">
+		<a href="#contactus.html" onclick="testMessageBox(event);"><img id="plus" src="img/plus.png" ></img></a>
+		</br>
+		<a><img id="title" src="img/title.png" ></img></a>
+		<a><img id="left-arrow" src="img/index-leftarrow.png" alt=""/></a>
+		<a><img id="right-arrow" src="img/index-rightarrow.png" alt=""/></a>
+	</div>
+</body>
 </html>
