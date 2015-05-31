@@ -2,40 +2,91 @@
 
 <html>
 <meta charset="utf-8" />
+<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+<link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/login-box-modal-dialog-window/index.html" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="loginpop.js"></script>
 <head>
-<style type="text/css"> 
-			#plus{
-				float:right;
-				width:3%;
-				margin-top:3%;
-				margin-right:3% ;
-			}
-			#title{
-				display: block;
-				margin-top:13%;
-   				margin-left: auto;
-    			margin-right: auto;
-			}
-			#left-arrow{
-				margin-top:-18%;
-				float:left;
-			}
-			#right-arrow{
-				margin-top:-18%;
-				float:right;
-			}
-</style>
-	<title>[NAME]</title>
-<script>
-</script>
+<title>Mr.Clutch</title>
 </head>
 <body>
-	<div id="head">
-		<a href="#contactus.html" onclick="testMessageBox(event);"><img id="plus" src="img/plus.png" ></img></a>
-		</br>
-		<a><img id="title" src="img/title.png" ></img></a>
-		<a><img id="left-arrow" src="img/index-leftarrow.png" alt=""/></a>
-		<a><img id="right-arrow" src="img/index-rightarrow.png" alt=""/></a>
+	<div id="login-box" class="login-popup">
+        <a href="#" class="close"><img src="img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+          <form method="post" class="signin" action="#">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>Username</span>
+                <input id="username" name="username" value="" type="text" autocomplete="on" >
+                </label>
+                
+                <label class="password">
+                <span>Password</span>
+                <input id="password" name="password" value="" type="password" >
+                </label>
+                <p>
+                <a href="#"><img id="login-btn"src="img/login-1.png" style="width:50%;float:left;"></a>
+                </p>
+                <p>
+                <a  href="#"><img id="register-btn"src="img/register-1.png" style="width:50%;float:right;"></a>
+                </p>
+                <p>
+                <a class="forgot" href="#">Forgot your password?</a>
+                </p>
+                
+                </fieldset>
+          </form>
+		</div>
+	<div id="header">
+		<a>介紹 &nbsp;&nbsp;</a><a>影片 &nbsp;&nbsp;</a><a>特色 &nbsp;&nbsp;</a><a>聯絡我們 &nbsp;&nbsp;</a><a href="#login-box" class="login-window">登入 </a><a>&nbsp;&nbsp;&nbsp;&nbsp; </a>
+	</div> 
+	<div id="main">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    </div>
+	</div>
+	<div id="info">
+		<hr>
+		<p class="title" id="infotitle">不怕一萬 &nbsp;只怕萬一</p>
+		<p id="infocontent">根據研究，車禍發生下即刻被救援，您與您的家人是否都更安心有保障呢？時，駕駛最怕沒有立即被搶救，造成無法挽救的後果，若能在事發當
+Mr. Clutch向您保證，事故發生時，絕對不會多延遲一分鐘，給您最及時有效的救援。只要您使用此App，讓Mr. Clutch陪伴駕駛，關鍵時刻必有關鍵先生。
+Mr. Clutch是第一個將汽車內的緊急求生硬體移植至手機上的App，只需動口不必動手，透過語音模式，藉由GPS定位與精確計算，及首創的三重確認法，Mr. Clutch能萬無一失的判定車禍發生，即刻救援，將損失降至最低。
+結合兼具創新性、整合性、專屬性的App與平台，使用者駕駛前能獲得充分資訊，駕駛時安心有保障，駕駛後完整取得資訊分析，更能得到全方位整合性的行車相關資訊，輕鬆掌握所有使用者的想知道的信息與狀況。
+Mr. Clutch能實現您重視自身安全和即時救援的需求保障，主動預防、求救、規劃、分析一手包辦。只要開啟此App，您的安全將由Mr. Clutch全權守護。
+</p>
+	</div>
+	<div id="video">
+		<hr>
+		<p class="title" >影片</p>
+		<p >1i'm an artist i'm an artist i'm an artist
+						<br/>     i'm an artisti'm an artisti'm an artistbla
+						</br>       i'm an artisti'm an artistblablablablbal
+						<br/>    i'm an artisti'm an artisti'm an artistblabl
+						</br>     i'm an artisti'm an artistblablablablbal
+						<br/>     i'm an artisti'm an artisti'm an artistbla
+						</br>       i'm an artisti'm an artistblablablablbal
+						<br/>    i'm an artisti'm an artisti'm an artistblabl
+						</br>     i'm an artisti'm an artistblablablablbal</p>
+		<p>
+	</div>
+	<div id="charac">
+		<hr>
+		<p class="title" >特色</p>
+	</div>
+	<div id="rescue">
+		<hr>
+		<p class="title" >即時救援</p>
+	</div>
+	<div id="personal">
+		<hr>
+		<p class="title" >個人專屬</p>
+	</div>
+	<div id="inform">
+		<hr>
+		<p class="title" >資訊整合</p>
+	</div>
+	<div id="contactus">
+		<hr>
+		<p class="title" >聯絡我們</p>
 	</div>
 </body>
 </html>

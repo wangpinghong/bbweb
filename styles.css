@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+body {
+	background-color: #FFFAFA;
+}
+p,a{
+	font-family:'微軟正黑體';
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.title{
+	text-align:center;
+	margin-top: -1%;
+	font-size:50px;
+}
+/*css for login*/
+ #mask {
+	display: none;
+	background: #FFEEDD; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.login-popup{
+	display:none;
+	background: #68CFE8;
+	padding: 12px; 	
+	border: 2px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left:50%;
+	margin:auto auto;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #999;
+	-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+.login-popup img.btn_close {
+	float: right; 
+	margin: -28px -28px 0 0;
+}
+.login-popup form img{
+	width:8%;
+}
+.login-popup fieldset { 
+	border:none; 
+}
+
+.login-popup form.signin .textbox label { 
+	display:block; 
+	padding-bottom:7px; 
+}
+
+.login-popup form.signin .textbox span { 
+	display:block;
+}
+
+.login-popup form.signin p, form.signin span { 
+	color:#fff; 
+	font-size:11px; 
+	line-height:18px;
+} 
+
+.login-popup form.signin .textbox input { 
+	background:#fff; 
+	border-bottom:1px solid #333;
+	border-left:1px solid #000;
+	border-right:1px solid #333;
+	border-top:1px solid #000;
+	color:#fff; 
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	font:13px Arial, Helvetica, sans-serif;
+	padding:6px 6px 4px;
+	width:200px;
+}
+
+.login-popup form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+.login-popup form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000;  }
+
+#login-btn:hover{
+	width:50%;
+	float:left;
+	content:url(img/login-2.png);
+}
+#register-btn:hover{
+	width:50%;
+	float:left;
+	content:url(img/register-2.png);
+}
+/*css for header*/
+#header {
+	position:fixed ;
+	background-color: #DEDEDE;
+	opacity:0.9;
+	width:100%;
+	text-align:right;
+}
+#header a{
+	text-align:right;
+	font-size:25px;
+	color:#4F4F4F;
+}
+#headerimg{
+	display:block;
+	margin:auto;
+	width:30%;
+}
+/*css for main*/
+#main {
+	background: url(img/pattern.jpg) no-repeat center center ; 
+}
+/*css for info*/
+#info {
+	margin-top: 0.5%;
+}
+#infocontent {
+	font-size: large;
+	text-align:center;
+}
+/*css for video*/
+/*css for charac*/
+/*css for rescue*/
+/*css for personal*/
+/*css for inform*/
+/*css for contactus*/
