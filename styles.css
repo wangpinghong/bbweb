@@ -106,9 +106,20 @@ a:hover {
 	background-color: #DEDEDE;
 	opacity:0.9;
 	width:100%;
-	text-align:right;
+	text-align:center;
 }
 #header a{
+	text-align:center;
+	font-size:25px;
+	color:#4F4F4F;
+}
+#header img {
+	width:3%;
+}
+#header .right{
+	float:right;
+}
+.right a{
 	text-align:right;
 	font-size:25px;
 	color:#4F4F4F;
@@ -126,13 +137,105 @@ a:hover {
 #info {
 	margin-top: 0.5%;
 }
+#info .title{
+	margin-top:1%;
+}
+#info .title img{
+	width:10%;
+}
 #infocontent {
 	font-size: large;
 	text-align:center;
 }
+#info .titleb{
+	width:100%;
+	display:block;
+	margin:0 auto;
+	margin-top:-7%;
+}
+.infofooter img{
+	width:5%;
+}
 /*css for video*/
 /*css for charac*/
+#charac .characimg {
+	text-align:center;
+}
+#charac .charactext {
+	text-align:center;
+}
+#charac .characarrow {
+	text-align:center;
+}
+#charac .characimg img{
+	width:20%;
+	float:center;
+}
+#charac .charactext .chtexttitle{
+	font-size:30px;
+	font-weight:bold;
+}
+#charac .charactext img{
+	width:20%;
+}
+#charac .characarrow img{
+	width:5%;
+}
 /*css for rescue*/
+#rescue .rescueimg {
+	text-align:center;
+}
+#rescue .rescuetext {
+	text-align:center;
+}
+
+#rescue .rescueimg img{
+	width:20%;
+	float:center;
+}
+#rescue .rescuetext .restexttitle{
+	font-size:30px;
+	font-weight:bold;
+}
+#rescue .rescuetext img{
+	width:20%;
+}
 /*css for personal*/
+#personal .personalimg {
+	text-align:center;
+}
+#personal .personaltext {
+	text-align:center;
+}
+
+#personal .personalimg img{
+	width:20%;
+	float:center;
+}
+#personal .personaltext .pertexttitle{
+	font-size:30px;
+	font-weight:bold;
+}
+#personal .personaltext img{
+	width:20%;
+}
 /*css for inform*/
+#inform .informimg {
+	text-align:center;
+}
+#inform .informtext {
+	text-align:center;
+}
+
+#inform .informimg img{
+	width:20%;
+	float:center;
+}
+#inform .informtext .intexttitle{
+	font-size:30px;
+	font-weight:bold;
+}
+#inform .informtext img{
+	width:20%;
+}
 /*css for contactus*/

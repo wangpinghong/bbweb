@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div id="login-box" class="login-popup">
-        <a href="#" class="close"><img src="img/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+        <a href="#" class="close"><img src="img/close_pop1.png" class="btn_close" title="Close Window" alt="Close" /></a>
           <form method="post" class="signin" action="#">
                 <fieldset class="textbox">
             	<label class="username">
@@ -37,52 +37,99 @@
           </form>
 		</div>
 	<div id="header">
-		<a>介紹 &nbsp;&nbsp;</a><a>影片 &nbsp;&nbsp;</a><a>特色 &nbsp;&nbsp;</a><a>聯絡我們 &nbsp;&nbsp;</a><a href="#login-box" class="login-window">登入 </a><a>&nbsp;&nbsp;&nbsp;&nbsp; </a>
-	</div> 
+		<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a onclick="toinfo();">介紹 &nbsp;&nbsp;</a><a id="title2" onclick="tovideo();">影片 &nbsp;&nbsp;&nbsp;&nbsp;</a>
+		<a onclick="totop();"><img src="img/hat.png"></a>
+		<a id="title3" onclick="tocharac();">&nbsp;&nbsp;&nbsp;&nbsp; 特色 &nbsp;&nbsp;</a><a id="title4" onclick="tocontactus();">聯絡我們 &nbsp;&nbsp;</a><a href="#login-box" class="login-window">登入 </a><a>&nbsp;&nbsp;&nbsp;&nbsp; </a>
+	</div>
+	</div>
 	<div id="main">
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     </div>
 	</div>
+	
 	<div id="info">
-		<hr>
-		<p class="title" id="infotitle">不怕一萬 &nbsp;只怕萬一</p>
-		<p id="infocontent">根據研究，車禍發生下即刻被救援，您與您的家人是否都更安心有保障呢？時，駕駛最怕沒有立即被搶救，造成無法挽救的後果，若能在事發當
-Mr. Clutch向您保證，事故發生時，絕對不會多延遲一分鐘，給您最及時有效的救援。只要您使用此App，讓Mr. Clutch陪伴駕駛，關鍵時刻必有關鍵先生。
-Mr. Clutch是第一個將汽車內的緊急求生硬體移植至手機上的App，只需動口不必動手，透過語音模式，藉由GPS定位與精確計算，及首創的三重確認法，Mr. Clutch能萬無一失的判定車禍發生，即刻救援，將損失降至最低。
-結合兼具創新性、整合性、專屬性的App與平台，使用者駕駛前能獲得充分資訊，駕駛時安心有保障，駕駛後完整取得資訊分析，更能得到全方位整合性的行車相關資訊，輕鬆掌握所有使用者的想知道的信息與狀況。
-Mr. Clutch能實現您重視自身安全和即時救援的需求保障，主動預防、求救、規劃、分析一手包辦。只要開啟此App，您的安全將由Mr. Clutch全權守護。
-</p>
+	<hr>
+	<p class="title" >介紹</p>
+	<img class="titleb" src="img/info/titleblock.png">
 	</div>
 	<div id="video">
 		<hr>
 		<p class="title" >影片</p>
-		<p >1i'm an artist i'm an artist i'm an artist
-						<br/>     i'm an artisti'm an artisti'm an artistbla
-						</br>       i'm an artisti'm an artistblablablablbal
-						<br/>    i'm an artisti'm an artisti'm an artistblabl
-						</br>     i'm an artisti'm an artistblablablablbal
-						<br/>     i'm an artisti'm an artisti'm an artistbla
-						</br>       i'm an artisti'm an artistblablablablbal
-						<br/>    i'm an artisti'm an artisti'm an artistblabl
-						</br>     i'm an artisti'm an artistblablablablbal</p>
-		<p>
 	</div>
 	<div id="charac">
 		<hr>
 		<p class="title" >特色</p>
+		<div class="characimg">
+		<img class="chimgl" src="img/charac/1 (1).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="chimgc" src="img/charac/5 (1).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="chimgr" src="img/charac/9.png">
+		</div>
+		<div class="charactext">
+		<p class="chtexttitle" >即時救援&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;個人專屬 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;資訊整合</p>
+		&nbsp;&nbsp;<img class="chimgl" src="img/charac/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="chimgc" src="img/charac/text3.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="chimgr" src="img/charac/text2.png">
+		</div>
+		<div class="characarrow">
+		<a onclick="torescue();"><img class="charl" src="img/charac/1-1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a><a onclick="topersonal();"><img class="charc" src="img/charac/5-1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</a><a onclick="toinform();"><img class="charr" src="img/charac/9-1.png">
+		</div>
 	</div>
 	<div id="rescue">
 		<hr>
-		<p class="title" >即時救援</p>
+		<p class="title" style="color:#ea3432;">即時救援</p>
+		<div class="rescueimg">
+		<img class="resimgl" src="img/rescue/2 (1).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="resimgc" src="img/rescue/3 (1).png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="resimgr" src="img/rescue/4 (1).png">
+		</div>
+		<div class="rescuetext">
+		<p class="restexttitle" >本機比對&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;實況比對 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;語音詢問</p>
+		&nbsp;&nbsp;<img class="resimgl" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="resimgc" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="resimgr" src="img/rescue/text1.png">
+		</div>
+		<div class="infofooter">
+		<a onclick="tocharac();"><img src="img/rescue/1-1 拷貝.png"></a>
+		</div>
 	</div>
 	<div id="personal">
 		<hr>
-		<p class="title" >個人專屬</p>
+		<p class="title" style="color:#eead9e;">個人專屬</p>
+		<div class="personalimg">
+		<img class="perimgl" src="img/personal/6.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="perimgc" src="img/personal/7.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="perimgr" src="img/personal/8.png">
+		</div>
+		<div class="personaltext">
+		<p class="pertexttitle" >行車紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雲端平台 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分析提醒</p>
+		&nbsp;&nbsp;<img class="perimgl" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="perimgc" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="perimgr" src="img/rescue/text1.png">
+		</div>
+		<div class="infofooter">
+		<a onclick="tocharac();"><img src="img/personal/5-1 拷貝.png"></a>
+		</div>
 	</div>
 	<div id="inform">
 		<hr>
-		<p class="title" >資訊整合</p>
+		<p class="title" style="color:#fd9b09;" >資訊整合</p>
+		<div class="informimg">
+		<img class="inimgl" src="img/inform/10.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="inimgc" src="img/inform/11.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="inimgr" src="img/inform/12.png">
+		</div>
+		<div class="informtext">
+		<p class="intexttitle" >資訊提供&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最新消息 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;事故表單</p>
+		&nbsp;&nbsp;<img class="inimgl" src="img/inform/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="inimgc" src="img/inform/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img class="inimgr" src="img/inform/text1.png">
+		</div>
+		<div class="infofooter">
+		<a onclick="tocharac();"><img src="img/inform/9-1 拷貝.png"></a>
+		</div>
 	</div>
 	<div id="contactus">
 		<hr>

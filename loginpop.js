@@ -31,3 +31,68 @@ $(document).ready(function() {
 	return false;
 	});
 });
+//For Scroll
+function totop(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: 0
+		}, 600);
+ 
+		return false;
+}
+function toinfo(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#info").offset().top
+		}, 600);
+ 
+		return false;
+}
+function tovideo(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#video").offset().top
+		}, 600);
+ 
+		return false;
+}
+function tocharac(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#charac").offset().top
+		}, 600);
+ 
+		return false;
+}
+function torescue(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#rescue").offset().top
+		}, 600);
+ 
+		return false;
+}
+function toinform(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#inform").offset().top
+		}, 600);
+ 
+		return false;
+}
+function topersonal(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#personal").offset().top
+		}, 600);
+ 
+		return false;
+}
+function tocontactus(){
+	var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+		$body.animate({
+			scrollTop: $("#contactus").offset().top
+		}, 600);
+ 
+		return false;
+}
