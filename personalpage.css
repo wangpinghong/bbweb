@@ -1,0 +1,27 @@
+
+a{
+	font-family:'微軟正黑體';
+}
+/*css for header*/
+#header {
+	position:fixed ;
+	opacity:0.9;
+	width:100%;
+	text-align:center;
+}
+#header img {
+	width:100%;
+}
+
+/*css for messagesDiv*/
+#messagesDiv {
+	
+}
+.name{
+  width:100%;
+  text-align:left;
+  font-size:40px;
+  color:#fff;
+  text-shadow:#000 0 0 5px,#000 0 0 2px;
+  margin:10px 0 10px 10px;
+}

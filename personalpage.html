@@ -1,0 +1,35 @@
+﻿ <!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+  <head>
+  <title>個人首頁</title>
+  	<script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'>	</script> 
+  	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+ 	<link rel="stylesheet" href="personalpage.css" type="text/css" media="screen" />
+  	<script>
+      var myDataRef = new Firebase('https://mrclutch.firebaseio.com/test');
+    
+      myDataRef.on('child_added', function(snapshot) {
+        var message = snapshot.val();
+		displayChatMessage(message.name, message.text);
+		$('#messagesDiv').fadeTo(1000, 1);
+      });
+      function displayChatMessage(name, text) {
+        $('#messagesDiv').append( 
+        	 '<div class=message">' +
+          	 '<div class="text">' + text + '</div>' +
+             '<div class="name">' + name + '</div>' +
+             '</div>'
+         );
+        
+      };
+      
+    </script>
+  </head>
+  <body>
+  	<div id="header">
+	<img src="img/personal/header.png"
+	</div>
+	<div id='messagesDiv'></div>
+  </body>
+</html>

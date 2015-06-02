@@ -93,12 +93,12 @@ a:hover {
 #login-btn:hover{
 	width:50%;
 	float:left;
-	content:url(img/login-2.png);
+	content:url(img/login/login-2.png);
 }
 #register-btn:hover{
 	width:50%;
 	float:left;
-	content:url(img/register-2.png);
+	content:url(img/login/register-2.png);
 }
 /*css for header*/
 #header {
@@ -131,7 +131,7 @@ a:hover {
 }
 /*css for main*/
 #main {
-	background: url(img/pattern.jpg) no-repeat center center ; 
+	background: url(img/main/pattern.jpg) no-repeat center center ; 
 }
 /*css for info*/
 #info {
