@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 	$('a.login-window').click(function() {
 		
@@ -95,4 +97,17 @@ function tocontactus(){
 		}, 600);
  
 		return false;
+}
+//function for usr
+function checkusr(){
+	var name=document.getElementById("username").value;
+	if (name=="wang"||name=="huang"||name=="hsu"||name=="lee"||name=="liang"){
+		locahref(name);
+	}else {
+		alert("請先註冊帳號");
+	}
+}
+function locahref(n){
+	var url="personalpage.html?"+n;
+	location.href=url;
 }

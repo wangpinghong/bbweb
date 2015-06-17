@@ -1,0 +1,66 @@
+﻿ <!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+  <head>
+  <title>個人首頁</title>
+  	<script >
+  	var a1=121.3377;
+  	var a2=31.18294;
+  	var b1=121.3277;
+  	var b2=31.18294;
+  	var t1;
+  	var t2;
+		function distance(lat1, lon1, lat2, lon2) {
+			var R = 6371;
+			// km (change this constant to get miles)
+			var dLat = (lat2 - lat1) * Math.PI / 180;
+			var dLon = (lon2 - lon1) * Math.PI / 180;
+			var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+			var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+			var d = R * c;
+			if (d > 1)
+				return Math.round(d);
+			else if (d <= 1)
+				return Math.round(d * 1000) ;
+			return d;
+		}
+
+		//function for counting speed
+		function speed(d, t) {
+			var s = d / t;
+			return s;
+		}
+		
+		function myFunction(){
+			var d=distance(a1,a2,b1,b2);
+			var t;
+			if(t2>t1){
+				t=t2-t1;
+			}else{
+				t=t2+60-t1;
+			}
+			document.getElementById("demo").innerHTML = d/t;
+			document.getElementById("demo2").innerHTML = d ;
+			document.getElementById("demo1").innerHTML = t;
+			
+		}
+		function demo(){
+			t1=demoi();
+		}
+		function demo1(){
+			t2=demoi();
+		}
+		function demoi(){
+			var t = new Date();
+			t=t.getSeconds();
+			return t;
+		}
+  	</script>
+  </head>
+  <body>
+  <button onclick="demo();">settime</button>
+  <button onclick="demo1();">settime</button>
+  <button onclick="myFunction();">Click me</button>
+  <p id="demo"></p><p id="demo1"></p><p id="demo2"></p>
+  </body>
+</html>

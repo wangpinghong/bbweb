@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700)
-
+/* style="background: url(img/others/t7.jpg) fixed  ;background-size:cover;"*/
+html{
+}
 body {
-	background-color: #FFFAFA;
+
 }
 p,a{
 	font-family:'微軟正黑體';
@@ -10,6 +12,9 @@ a:hover {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+hr{
+	width:80%;
 }
 .title{
 	text-align:center;
@@ -67,8 +72,8 @@ a:hover {
 }
 
 .login-popup form.signin p, form.signin span { 
-	color:#fff; 
-	font-size:11px; 
+	color:#000; 
+	font-size:17px; 
 	line-height:18px;
 } 
 
@@ -78,7 +83,7 @@ a:hover {
 	border-left:1px solid #000;
 	border-right:1px solid #333;
 	border-top:1px solid #000;
-	color:#fff; 
+	color:#000; 
 	border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -102,11 +107,12 @@ a:hover {
 }
 /*css for header*/
 #header {
-	position:fixed ;
-	background-color: #DEDEDE;
+	position:fixed;
+	background-color: #DCDCDC;
 	opacity:0.9;
 	width:100%;
 	text-align:center;
+	z-index:3;
 }
 #header a{
 	text-align:center;
@@ -131,10 +137,12 @@ a:hover {
 }
 /*css for main*/
 #main {
-	background: url(img/main/pattern.jpg) no-repeat center center ; 
+	background: url(img/main/pattern.jpg) no-repeat center center ;
+	opacity:0.9;
 }
 /*css for info*/
 #info {
+	background-color:#fff;
 	margin-top: 0.5%;
 }
 #info .title{
@@ -155,6 +163,8 @@ a:hover {
 }
 .infofooter img{
 	width:5%;
+	z-index:2;
+	display:absolute;
 }
 /*css for video*/
 /*css for charac*/

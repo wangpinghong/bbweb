@@ -3,25 +3,59 @@ a{
 	font-family:'微軟正黑體';
 }
 /*css for header*/
-#header {
+
+#header img {
+	width:100%;
 	position:fixed ;
 	opacity:0.9;
 	width:100%;
 	text-align:center;
 }
-#header img {
-	width:100%;
+/*css for title block*/
+.t-block{
+	text-align:center
 }
-
+.t-block img{
+	width:10%;
+	margin:12% auto 0;
+}
+#logout{
+	position:absolute;
+	 z-index: 3;
+	text-align:left;
+	width:13%;
+}
 /*css for messagesDiv*/
 #messagesDiv {
-	
+  text-align:center;
+  font-size:35px;
+  color:#000;
+  font-family:"微軟正黑體";
 }
 .name{
-  width:100%;
-  text-align:left;
-  font-size:40px;
-  color:#fff;
-  text-shadow:#000 0 0 5px,#000 0 0 2px;
-  margin:10px 0 10px 10px;
+ display:inline;
+}
+.mid{
+ display:inline;
+}
+.time{
+ display:inline;
+}
+.lon{
+ display:inline;
+}
+.lati{
+ display:inline;
+}
+.counter{
+ display:inline;
+}
+.nspeed{
+ display:inline;
+}
+#apply:hover{
+content:url('img/personal/申請.png');
+}
+#download:hover{
+content:url('img/personal/下載.png');
 }

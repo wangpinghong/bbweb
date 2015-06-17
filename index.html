@@ -9,14 +9,14 @@
 <head>
 <title>Mr.Clutch</title>
 </head>
-<body>
-	<div id="login-box" class="login-popup">
+<body >
+	<div id="loginbox" class="login-popup">
         <a href="#" class="close"><img src="img/login/close_pop1.png" class="btn_close" title="Close Window" alt="Close" /></a>
           <form method="post" class="signin" action="#">
                 <fieldset class="textbox">
             	<label class="username">
                 <span>Username</span>
-                <input id="username" name="username" value="" type="text" autocomplete="on" >
+                <input id="username" name="username"  type="text" autocomplete="on" >
                 </label>
                 
                 <label class="password">
@@ -24,7 +24,7 @@
                 <input id="password" name="password" value="" type="password" >
                 </label>
                 <p>
-                <a href="#"><img id="login-btn"src="img/login/login-1.png" style="width:50%;float:left;"></a>
+                <a onclick="checkusr();"><img id="login-btn"src="img/login/login-1.png" style="width:50%;float:left;"></a>
                 </p>
                 <p>
                 <a  href="#"><img id="register-btn"src="img/login/register-1.png" style="width:50%;float:right;"></a>
@@ -38,8 +38,8 @@
 		</div>
 	<div id="header">
 		<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a onclick="toinfo();">介紹 &nbsp;&nbsp;</a><a id="title2" onclick="tovideo();">影片 &nbsp;&nbsp;&nbsp;&nbsp;</a>
-		<a onclick="totop();"><img src="img/main/hat.png"></a>
-		<a id="title3" onclick="tocharac();">&nbsp;&nbsp;&nbsp;&nbsp; 特色 &nbsp;&nbsp;</a><a id="title4" onclick="tocontactus();">聯絡我們 &nbsp;&nbsp;</a><a href="#login-box" class="login-window">登入 </a><a>&nbsp;&nbsp;&nbsp;&nbsp; </a>
+		<a onclick="totop();"><img src="img/main/h7.png"></a>
+		<a id="title3" onclick="tocharac();">&nbsp;&nbsp;&nbsp;&nbsp; 特色 &nbsp;&nbsp;</a><a id="title4" onclick="tocontactus();">聯絡我們 &nbsp;&nbsp;</a><a href="#loginbox" class="login-window">登入 </a><a>&nbsp;&nbsp;&nbsp;&nbsp; </a>
 	</div>
 	</div>
 	<div id="main">
@@ -49,7 +49,7 @@
 	<div id="info">
 	<hr>
 	<p class="title" >介紹</p>
-	<img class="titleb" src="img/info/titleblock.png">
+	<img class="titleb" src="img/info/titleblock2.png">
 	</div>
 	<div id="video">
 		<hr>
@@ -95,18 +95,7 @@
 	</div>
 	<div id="personal">
 		<hr>
-		<p class="title" style="color:#eead9e;">個人專屬</p>
-		<div class="personalimg">
-		<img class="perimgl" src="img/personal/6.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img class="perimgc" src="img/personal/7.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img class="perimgr" src="img/personal/8.png">
-		</div>
-		<div class="personaltext">
-		<p class="pertexttitle" >行車紀錄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雲端平台 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分析提醒</p>
-		&nbsp;&nbsp;<img class="perimgl" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img class="perimgc" src="img/rescue/text1.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img class="perimgr" src="img/rescue/text1.png">
-		</div>
+		<img class="contentbg" src="img/personal/bg.png">
 		<div class="infofooter">
 		<a onclick="tocharac();"><img src="img/personal/5-1 拷貝.png"></a>
 		</div>

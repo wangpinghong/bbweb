@@ -6,29 +6,67 @@
   	<script src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'>	</script> 
   	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
  	<link rel="stylesheet" href="personalpage.css" type="text/css" media="screen" />
-  	<script>
-      var myDataRef = new Firebase('https://mrclutch.firebaseio.com/test');
-    
+  	<script >
+  	  //定義使用者名稱，資料庫
+  	  var usrname;
+  	  var myDataRef = new Firebase('https://mrclutch.firebaseio.com/test');
+  	  getusrname();
+  	  //隨時更新資料
       myDataRef.on('child_added', function(snapshot) {
         var message = snapshot.val();
-		displayChatMessage(message.name, message.text);
+		displayChatMessage(message.name, message.time,message.lon,message.lati,message.counter,message.nspeed);
 		$('#messagesDiv').fadeTo(1000, 1);
       });
-      function displayChatMessage(name, text) {
-        $('#messagesDiv').append( 
+      //以下皆為function
+      //為顯示資料
+      function displayChatMessage(name, time ,lon ,lati, counter ,nspeed) {
+      if (name == usrname){
+        $('#messagesDiv').prepend( 
         	 '<div class=message">' +
-          	 '<div class="text">' + text + '</div>' +
              '<div class="name">' + name + '</div>' +
-             '</div>'
-         );
-        
+             '<div class="mid">-</div>'+
+             '<div class="time">' + time + '</div>' +
+             '<div class="mid">-</div>'+
+             '<div class="lon">' + lon.toFixed(2) + '</div>' +
+              '<div class="mid">,</div>'+
+             '<div class="lati">' + lati.toFixed(2) + '</div>' +
+             '<div class="mid">-</div>'+
+             '<div class="counter">' + counter + '</div>' +
+              '<div class="mid">,</div>'+
+             '<div class="nspeed">' + nspeed + '</div>' +
+             '</div>'+'</br>'
+         );}
+         else{
+         }
       };
-      
-    </script>
+      //擷取網址usrname
+      function getusrname () {
+     	var url = location.href;
+     	usrname = url.split("?");
+     	if(usrname[1] == "wang"){
+     		usrname="wang";
+     	}else if(usrname[1] == "huang")  {
+     		usrname="huang";
+     	}else if(usrname[1] == "liang")  {
+     		usrname="liang";
+     	}else if(usrname[1] == "hsu")  {
+     		usrname="hsu";
+     	}else if(usrname[1] == "lee")  {
+     		usrname="lee";
+     	}else{
+     	}	
+   	  }
+  	</script>
   </head>
   <body>
+  	<a onclick="window.close" href="index.html"><img id="logout" src="img/personal/登出2 (1).png" ></a>
   	<div id="header">
-	<img src="img/personal/header.png"
+	<img src="img/personal/header.png">
+	<br>
+	</div>
+	<div class="t-block">
+	<a href="download/info.docx"><img id="download" src="img/personal/下載(按).png" ></a>
+	<a ><img id="apply" src="img/personal/申請(按).png"></a>
 	</div>
 	<div id='messagesDiv'></div>
   </body>
