@@ -1,2 +1,2 @@
-0618_hsu
-	���ѧ�ı�o������BTN�W�઺�A�ڧ⥦��F�A����Τ]������ΡA(�Ϥ����bimg/index)
+﻿0618_hsu
+	今天我覺得首頁的BTN超醜的，我把它改了，有圓形也有長方形，(圖片都在img/index)
