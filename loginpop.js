@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var loginBox = $(this).attr('href');
 
 		//Fade in the Popup and add close button
-		$(loginBox).fadeIn(300);
+		$(loginBox).fadeIn(500);
 		
 		//Set the center alignment padding + border
 		var popMargTop = ($(loginBox).height() + 24) / 2; 
